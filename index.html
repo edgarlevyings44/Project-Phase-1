@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily Muse</h1>
+    </header>
+
+
+    <main>
+    
+        <section>
+            <h2>Quote</h2>
+            <div class="quote">
+                <blockquote id="quote-text"></blockquote>
+                <cite id="quote-author"></cite>
+            </div>
+            <button id="get-quote-button">New Quote</button>
+        </section>
+
+        
+        <section>
+            <h2>Reviews</h2>
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+            <div class="reviews" id="review-list">
+                <!-- Reviews dynamically added here using JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
