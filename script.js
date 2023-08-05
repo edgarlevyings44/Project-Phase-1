@@ -11,4 +11,13 @@
         return [];
       });
   }
-  
+  // Function to display random quotes
+
+function displayRandomQuote(quotes) {
+  const randomQuoteIndex = Math.floor(Math.random() * quotes.length);
+  const quoteText = document.getElementById('quote-text');
+  const quoteAuthor = document.getElementById('quote-author');
+
+  quoteText.textContent = quotes[randomQuoteIndex].text;
+  quoteAuthor.textContent = quotes[randomQuoteIndex].author;
+}
