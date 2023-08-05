@@ -12,7 +12,32 @@ header {
     text-align: center;
 }
 
+div.quote {
+    padding: 10px;
+    margin: 10px;
+    background-color:#e6e6fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
 
+div.quote blockquote {
+    font-style:grave;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color:#483d8b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+div.quote cite {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 14px;
+    color:	#b22222;
+    margin: 0;
+    font-weight: bold;
+}
 main {
     max-width: 800px;
     margin: 0 auto;
