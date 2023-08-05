@@ -11,6 +11,7 @@
         return [];
       });
   }
+
   // Function to display random quotes
 
 function displayRandomQuote(quotes) {
@@ -19,5 +20,5 @@ function displayRandomQuote(quotes) {
   const quoteAuthor = document.getElementById('quote-author');
 
   quoteText.textContent = quotes[randomQuoteIndex].text;
-  quoteAuthor.textContent = quotes[randomQuoteIndex].author;
+  quoteAuthor.textContent = "- " + quotes[randomQuoteIndex].author;
 }
