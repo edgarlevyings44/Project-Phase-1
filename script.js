@@ -1,6 +1,7 @@
-// Function to fetch quotes from the API
 
-  function fetchQuotes() {
+const reviewData = []; 
+// Function to fetch quotes from the API
+function fetchQuotes() {
     return fetch('https://type.fit/api/quotes')
       .then(response => response.json())
       .then(data => {
@@ -54,7 +55,19 @@ getQuoteButton.addEventListener('click', () => {
 displayRandomQuote(fetchQuotes());
 
 //Function to display reviews
+function displayReviews(review) {
+  const reviewContainer = document.getElementById('review-list');
+  reviewContainer.innerHTML = '';
 
+  const ul = document.createElement('ul');
+
+  review.forEach(review => {
+    const li = document.createElement('li');
+    li.textContent = review.name + ': ' + review.comment;
+    ul.appendChild(li);
+  });
+  reviewContainer.appendChild(ul);
+}
 // Event listener for the review form
 
 document.getElementById('review-form').addEventListener('submit', (e) => {
@@ -70,5 +83,10 @@ document.getElementById('review-form').addEventListener('submit', (e) => {
   document.getElementById('comment').value = '';
 
   displayReviews(reviewData);
-})
+});
+
+fetchQuotes().then(quotes => {
+  displayRandomQuote(quotes);
+});
+displayReviews(reviewData);
 

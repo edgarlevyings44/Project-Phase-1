@@ -39,6 +39,7 @@
         
         <section>
             <h2>Reviews</h2>
+            
             <form id="review-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -46,10 +47,12 @@
                 <label for="comment">Comment:</label>
                 <textarea id="comment" name="comment" required></textarea>
 
-                <button type="submit">Submit Review</button>
+                <button type="submit">Add Review</button>
             </form>
             <div class="reviews" id="review-list">
-                
+                <ul style="list-style-type: none" id="review-list">
+                    <li></li>
+                </ul>
             </div>
         </section>
     </main>
