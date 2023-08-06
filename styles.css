@@ -72,3 +72,19 @@ span {
     color:#4b0082;
     
 }
+li. {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+ footer {
+    background-color:#6495ed;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique;
+ }
