@@ -34,15 +34,20 @@ getQuoteButton.addEventListener('click', () => {
   let numDislikes = 0;
   const likeButton = document.getElementById('like-button');
   const dislikeButton = document.getElementById('dislike-button');
+  const likeCount = document.getElementById('like-count');
+  const dislikeCount = document.getElementById('dislike-count');
+
 
   likeButton.addEventListener('click', () => {
       numLikes++;
       likeButton.classList.add('liked');
+      likeCount.textContent = numLikes;
   });
 
   dislikeButton.addEventListener('click', () => {
       numDislikes++;
       dislikeButton.classList.add('disliked');
+      dislikeCount.textContent = numDislikes;
   });
 
 }
