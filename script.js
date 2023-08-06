@@ -28,7 +28,7 @@ getQuoteButton.addEventListener('click', () => {
     quoteText.textContent = quotes[randomQuoteIndex].text;
     quoteAuthor.textContent = "- " + quotes[randomQuoteIndex].author;
 })
-  
+  // Function to like and dislike
   
   let numLikes = 0;
   let numDislikes = 0;
@@ -52,4 +52,23 @@ getQuoteButton.addEventListener('click', () => {
 
 }
 displayRandomQuote(fetchQuotes());
+
+//Function to display reviews
+
+// Event listener for the review form
+
+document.getElementById('review-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const comment = document.getElementById('comment').value;
+
+  // Push to the reviewData array
+  reviewData.push({name, comment});
+
+    // Clear the form
+  document.getElementById('name').value = '';
+  document.getElementById('comment').value = '';
+
+  displayReviews(reviewData);
+})
 

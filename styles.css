@@ -17,7 +17,7 @@ div.quote {
     margin: 10px;
     background-color:#e6e6fa;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 20px 20px 20px #888888;
 }
 
 div.quote blockquote {
