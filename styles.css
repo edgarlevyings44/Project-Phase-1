@@ -72,6 +72,12 @@ span {
     color:#4b0082;
     
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
 li. {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 10px;
@@ -88,3 +94,4 @@ li. {
     font-weight: bolder;
     font-style: oblique;
  }
+ 
